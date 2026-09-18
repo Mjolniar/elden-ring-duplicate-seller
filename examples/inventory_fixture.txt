@@ -1,0 +1,8 @@
+# Local dry-run fixture. This is not live game data.
+item=instance:1,id:1000,category:weapon,qty:1,upgrade:0,modified:false,sell:100,name:Debug Sword
+item=instance:2,id:1000,category:weapon,qty:1,upgrade:0,modified:false,sell:100,name:Debug Sword
+item=instance:3,id:1000,category:weapon,qty:1,upgrade:0,modified:false,sell:100,name:Debug Sword
+item=instance:4,id:2000,category:armor,qty:1,upgrade:0,modified:false,sell:50,name:Debug Armor
+item=instance:5,id:2000,category:armor,qty:1,upgrade:0,modified:false,sell:50,name:Debug Armor
+item=instance:6,id:3000,category:weapon,qty:1,upgrade:3,modified:false,sell:100,name:Upgraded Sword
+item=instance:7,id:4000,category:consumable,qty:10,upgrade:0,modified:false,sell:10,name:Debug Consumable

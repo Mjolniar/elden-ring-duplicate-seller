@@ -1,0 +1,3 @@
+# Fixture for explicit consumable stock-rule validation.
+item=instance:1,id:9000,category:consumable,qty:40,upgrade:0,modified:false,sell:3,name:Debug Arrow
+item=instance:2,id:9001,category:consumable,qty:10,upgrade:0,modified:false,sell:4,name:Debug Grease

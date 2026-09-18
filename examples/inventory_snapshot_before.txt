@@ -1,0 +1,5 @@
+# Example before-snapshot for InventoryChangeCli.
+count=3
+slot=index:0,handle:0x300,id:0x1000,category:armor,qty:1
+slot=index:1,handle:0x301,id:0x2000,category:talisman,qty:1
+slot=index:2,handle:0x302,id:0x3000,category:ash_of_war,qty:1

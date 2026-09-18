@@ -1,0 +1,21 @@
+# Full default-policy fixture. This is not live game data.
+item=instance:1,id:1000,category:weapon,qty:1,upgrade:0,modified:false,sell:100,name:Base Sword
+item=instance:2,id:1000,category:weapon,qty:1,upgrade:0,modified:false,sell:100,name:Base Sword
+item=instance:3,id:1000,category:weapon,qty:1,upgrade:0,modified:false,sell:100,name:Base Sword
+item=instance:4,id:1100,category:shield,qty:1,upgrade:0,modified:false,sell:60,name:Base Shield
+item=instance:5,id:1100,category:shield,qty:1,upgrade:0,modified:false,sell:60,name:Base Shield
+item=instance:6,id:1200,category:armor,qty:1,upgrade:0,modified:false,sell:50,name:Base Armor
+item=instance:7,id:1200,category:armor,qty:1,upgrade:0,modified:false,sell:50,name:Base Armor
+item=instance:8,id:1300,category:talisman,qty:1,upgrade:0,modified:false,sell:25,name:Base Talisman
+item=instance:9,id:1300,category:talisman,qty:1,upgrade:0,modified:false,sell:25,name:Base Talisman
+item=instance:10,id:1400,category:ash_of_war,qty:1,upgrade:0,modified:false,sell:40,name:Base Ash
+item=instance:11,id:1400,category:ash_of_war,qty:1,upgrade:0,modified:false,sell:40,name:Base Ash
+item=instance:12,id:1500,category:weapon,qty:1,upgrade:3,modified:false,sell:100,name:Upgraded Sword
+item=instance:13,id:1500,category:weapon,qty:1,upgrade:3,modified:false,sell:100,name:Upgraded Sword
+item=instance:14,id:1600,category:weapon,qty:1,upgrade:0,modified:true,sell:100,name:Modified Sword
+item=instance:15,id:1600,category:weapon,qty:1,upgrade:0,modified:true,sell:100,name:Modified Sword
+item=instance:16,id:1700,category:consumable,qty:40,upgrade:0,modified:false,sell:3,name:Debug Arrow
+item=instance:17,id:1800,category:material,qty:99,upgrade:0,modified:false,sell:1,name:Debug Material
+item=instance:18,id:1900,category:keyitem,qty:1,upgrade:0,modified:false,sell:0,name:Debug Key
+item=instance:19,id:2000,category:unknown,qty:1,upgrade:0,modified:false,sell:0,name:Unknown Thing
+item=instance:20,id:2100,category:spell,qty:1,upgrade:0,modified:false,sell:10,name:Debug Spell

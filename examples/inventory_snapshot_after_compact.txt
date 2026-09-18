@@ -1,0 +1,5 @@
+# Example after-snapshot where slot 1 was removed and later rows compacted.
+count=2
+slot=index:0,handle:0x300,id:0x1000,category:armor,qty:1
+slot=index:1,handle:0x302,id:0x3000,category:ash_of_war,qty:1
+slot=index:2,empty:true

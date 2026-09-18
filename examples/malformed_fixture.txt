@@ -1,0 +1,8 @@
+# Malformed rows for local parser/CLI warning checks.
+item=instance:1,id:1000,category:weapon,qty:0,upgrade:0,modified:false,sell:100,name:Zero Qty Sword
+item=instance:2,id:1001,category:weapon,qty:-1,upgrade:0,modified:false,sell:100,name:Negative Qty Sword
+item=instance:2,id:1002,category:weapon,qty:1,upgrade:0,modified:false,sell:100,name:Duplicate Instance Sword
+item=instance:3,id:1003,category:not_a_category,qty:1,upgrade:0,modified:false,sell:100,name:Unknown Category Row
+item=id:1004,category:weapon,qty:1,upgrade:0,modified:false,sell:100,name:Missing Instance Row
+item=instance:4,id:1005,category:weapon,qty:garbage,upgrade:nope,modified:maybe,sell:bad,name:Garbage Number Sword
+not_an_item=true
