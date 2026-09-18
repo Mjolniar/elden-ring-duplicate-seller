@@ -88,6 +88,28 @@ int main() {
         return fail("Empty sell_value_path should skip loading without warnings.");
     }
 
+    const auto directory = std::filesystem::temp_directory_path() /
+        ("erdup portable prices " + std::to_string(std::rand()));
+    std::filesystem::create_directory(directory);
+    std::ofstream(directory / "sell_values.txt") << "weapon 1000 123\n";
+    std::ofstream(directory / "custom.txt") << "weapon 1000 456\n";
+    config.nativeSaleEnabled = true;
+    config.sellValuePath.clear();
+    auto portable = erdup::loadConfiguredSellValues(config, directory);
+    config.sellValuePath = "custom.txt";
+    auto relative = erdup::loadConfiguredSellValues(config, directory);
+    config.sellValuePath = (directory / "custom.txt").string();
+    auto absolute = erdup::loadConfiguredSellValues(config, directory / "missing");
+    config.sellValuePath = "missing.txt";
+    auto missing = erdup::loadConfiguredSellValues(config, directory);
+    std::filesystem::remove_all(directory);
+    if (portable.categorizedValues.at({erdup::ItemCategory::Weapon, 1000}) != 123 ||
+        relative.categorizedValues.at({erdup::ItemCategory::Weapon, 1000}) != 456 ||
+        absolute.categorizedValues.at({erdup::ItemCategory::Weapon, 1000}) != 456 ||
+        missing.warnings.empty() || !missing.categorizedValues.empty()) {
+        return fail("Native prices must resolve beside the DLL, honor absolute overrides, and report missing files.");
+    }
+
     std::cout << "Sell-value metadata test passed.\n";
     return EXIT_SUCCESS;
 }

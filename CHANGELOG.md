@@ -1,5 +1,15 @@
 # Changelog
 
+## 0.1.0-beta.2
+
+- Double-click installer with configuration picker, package checksums, backup and rollback.
+- Adds its DLL once while preserving other mods. Updates preserve settings and prices.
+- Uninstall removes registration and moves mod files into backup.
+- Prices resolve beside the DLL; relative and absolute overrides are supported.
+- Choose preview or real selling during installation; Settings.cmd switches modes later.
+- Added installer integration tests and relative/default/missing price-file checks.
+- Menu appearance remains pending; sale/retention logic is unchanged.
+
 ## 0.1.0-beta.1
 
 - Initial distribution candidate for executable 2.7.1.0 / in-game 1.17.1.

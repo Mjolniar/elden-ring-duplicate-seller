@@ -24,7 +24,8 @@ SellValueLoadResult parseSellValueMetadata(
 );
 
 SellValueLoadResult loadSellValueMetadata(const std::filesystem::path& path);
-SellValueLoadResult loadConfiguredSellValues(const Config& config);
+SellValueLoadResult loadConfiguredSellValues(const Config& config,
+    const std::filesystem::path& dllDirectory = {});
 
 class SellValueIndex {
 public:

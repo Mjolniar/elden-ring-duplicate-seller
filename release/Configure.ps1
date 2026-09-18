@@ -1,19 +1,18 @@
-# Optional convenience helper. Changes only sell_value_path beside this script.
+param([ValidateSet('Preview','Sell')][string]$Mode = '')
 $ErrorActionPreference = 'Stop'
-$configPath = Join-Path $PSScriptRoot 'duplicate_seller.ini'
-$pricePath = Join-Path $PSScriptRoot 'sell_values.txt'
-if (-not (Test-Path -LiteralPath $configPath -PathType Leaf)) { throw 'duplicate_seller.ini is missing.' }
-if (-not (Test-Path -LiteralPath $pricePath -PathType Leaf)) { throw 'sell_values.txt is missing.' }
-$pricePath = (Resolve-Path -LiteralPath $pricePath).Path
-$lines = Get-Content -LiteralPath $configPath
-if (@($lines | Where-Object { $_ -match '^sell_value_path=' }).Count -ne 1) {
-    throw 'Expected exactly one sell_value_path setting; edit the configuration manually.'
-}
-$backupPath = $configPath + '.' + (Get-Date -Format 'yyyyMMdd-HHmmss-ffff') + '.bak'
-Copy-Item -LiteralPath $configPath -Destination $backupPath
-$lines = $lines | ForEach-Object {
-    if ($_ -match '^sell_value_path=') { 'sell_value_path=' + $pricePath } else { $_ }
-}
-[IO.File]::WriteAllLines($configPath, [string[]]$lines, (New-Object Text.UTF8Encoding($false)))
-Write-Output 'Price path configured. Other settings, including preview mode, were preserved.'
-Write-Output 'Next: register ERDuplicateSeller.dll in your existing Mod Engine 2 external_dlls list.'
+try {
+    $configPath = Join-Path $PSScriptRoot 'duplicate_seller.ini'
+    $text = [IO.File]::ReadAllText($configPath)
+    if ([regex]::Matches($text,'(?m)^dry_run=[^\r\n]*').Count -ne 1) { throw 'Expected one dry_run setting.' }
+    if (-not $Mode) {
+        Add-Type -AssemblyName System.Windows.Forms
+        $answer = [Windows.Forms.MessageBox]::Show('Enable actual selling with F8? Yes = sell duplicates. No = preview only.','Duplicate Seller settings','YesNoCancel')
+        if ($answer -eq 'Cancel') { exit 0 }
+        $Mode = if ($answer -eq 'Yes') { 'Sell' } else { 'Preview' }
+    }
+    $value = if ($Mode -eq 'Sell') { 'false' } else { 'true' }
+    $text = [regex]::Replace($text,'(?m)^dry_run=[^\r\n]*',('dry_run='+$value))
+    Copy-Item -LiteralPath $configPath -Destination ($configPath+'.'+[guid]::NewGuid().ToString('N')+'.bak')
+    [IO.File]::WriteAllText($configPath,$text,(New-Object Text.UTF8Encoding($false)))
+    Write-Output ('Mode: '+$Mode+'. The setting applies on the next F8 press.')
+} catch { Write-Error $_; exit 1 }

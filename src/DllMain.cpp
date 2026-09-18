@@ -134,7 +134,7 @@ void workerThread() {
         );
     }
 
-    const auto sellValueLoad = erdup::loadConfiguredSellValues(config);
+    const auto sellValueLoad = erdup::loadConfiguredSellValues(config, dllDirectory);
     erdup::SellValueIndex sellValues;
     sellValues.add(sellValueLoad);
     erdup::logInfo(

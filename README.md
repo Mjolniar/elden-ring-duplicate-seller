@@ -1,6 +1,6 @@
 # Elden Ring Duplicate Seller
 
-**0.1.0-beta.1 — offline, experimental.** Press **F8** to sell surplus carried equipment for its trader rune value.
+**0.1.0-beta.2 â€” offline, experimental.** Press **F8** to sell surplus carried equipment for its trader rune value.
 
 | Item | Copies kept |
 |---|---:|
@@ -16,12 +16,18 @@ Equipped copies are always protected, even above the keep count. Higher weapon u
 
 - Windows x64; Elden Ring executable **2.7.1.0** (in-game **1.17.1**). Other versions are refused.
 - Mod Engine 2 DLL loading. Tested locally with Mod Engine 2 2.1.0, Seamless Co-op 2.0.1 and Item and Enemy Randomizer 0.12.2, without other players connected.
-- Requires the Microsoft Visual C++ 2015–2022 x64 runtime.
+- Requires the Microsoft Visual C++ 2015â€“2022 x64 runtime.
 - Official online/Easy Anti-Cheat and multiplayer sessions are unsupported. Back up your save and use an offline modded launch.
 
 ## Installation
 
-See [INSTALL.md](INSTALL.md). The download starts in **preview mode** (`dry_run=true`). Enable actual selling after reviewing the plan. The bundled price table was extracted from the installed base-game regulation; modified prices require re-extraction from the regulation your game actually loads.
+1. Extract the ZIP and double-click **Install.cmd** inside ERDuplicateSeller.
+2. Select your Mod Engine 2 `config_eldenring.toml` and choose **selling** or **preview**.
+3. Launch normally through your offline modded launcher and press **F8**.
+
+No path editing or manual DLL registration. **Settings.cmd** switches modes; **Uninstall.cmd** removes registration and moves mod files into a backup. Run Install.cmd from a new download to update; existing settings and prices are preserved. See [INSTALL.md](INSTALL.md).
+
+The bundled price table was extracted from the installed base-game regulation; modified prices require re-extraction from the regulation your game actually loads.
 
 ## Status
 

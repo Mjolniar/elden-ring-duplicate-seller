@@ -71,6 +71,11 @@ else()
 endif()
 
 enable_testing()
+find_program(INSTALLER_TEST_PYTHON python)
+if(INSTALLER_TEST_PYTHON AND WIN32)
+    add_test(NAME InstallerIntegrationTest COMMAND ${INSTALLER_TEST_PYTHON}
+        ${CMAKE_CURRENT_SOURCE_DIR}/tests/InstallerTest.py $<TARGET_FILE:ERDuplicateSeller>)
+endif()
 add_test(NAME PolicySmokeTest COMMAND PolicySmokeTest)
 
 add_executable(PolicyInvariantTest

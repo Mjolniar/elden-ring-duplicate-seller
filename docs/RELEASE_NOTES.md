@@ -1,11 +1,14 @@
-# 0.1.0-beta.1 — distribution candidate
+# 0.1.0-beta.2 — easier installation
 
-F8 duplicate selling for Elden Ring executable 2.7.1.0 / in-game 1.17.1.
+Extract the ZIP, double-click Install.cmd, select your Mod Engine 2 configuration and choose preview or actual selling. Then launch as usual and press F8.
 
-Keeps two of each weapon/shield family and Ash of War, one of each armor piece/talisman ID, and all consumables and other goods. Equipped copies are protected. Surplus eligible equipment pays its exact trader value from the selected price table.
+- Price files are discovered beside the DLL automatically.
+- The installer registers the DLL, preserves other mods and backs up changes.
+- Updates preserve settings and custom prices. Uninstall unregisters the mod and moves its files into a backup.
+- Settings.cmd switches between preview and actual selling without editing the INI.
 
-This candidate includes the locally tested DLL, a clean preview-mode configuration, numeric base-game prices, setup helper, installation guide and checksums. Read INSTALL.md before use.
+Same keep rules and seller logic as beta.1: 2 weapons/shields and Ashes, 1 armor/talisman, all consumables/goods/ammunition, equipped copies protected. Exact trader prices require a table matching your active regulation.
 
-The menu-only indicator is provisional: hiding in gameplay and F8 operation passed; positive pause-menu/Inventory appearance and on-screen timeout validation remain pending. Native calls run on a worker thread. Use while idle and offline, with a save backup. Multiplayer and official online/Easy Anti-Cheat are unsupported.
+Windows x64, executable 2.7.1.0 / in-game 1.17.1 only. Offline experimental use; back up your save. Positive menu/Inventory indicator appearance and on-screen timeout remain pending. No new live sale validation is claimed for this build; changes were validated through build, automated price-loading tests and isolated installer tests.
 
-The Nexus listing text and upload checklist are in docs/NEXUS_DESCRIPTION.txt and docs/NEXUS_UPLOAD.md. Nexus publication has not been performed.
+Nexus listing materials are included in the source repository; Nexus publication has not been performed.

@@ -1,26 +1,25 @@
-[b]Elden Ring Duplicate Seller — offline beta[/b]
+[b]Elden Ring Duplicate Seller â€” offline beta[/b]
 
 Press F8 to sell surplus carried equipment for the same rune value shown by traders, using the supplied price table or one extracted from your active regulation.
 
 [b]What it keeps[/b]
-• Two copies of each weapon/shield family.
-• Two of each Ash of War.
-• One of each armor piece and talisman ID.
-• All consumables, spells, crafting materials, key items and ammunition.
+â€¢ Two copies of each weapon/shield family.
+â€¢ Two of each Ash of War.
+â€¢ One of each armor piece and talisman ID.
+â€¢ All consumables, spells, crafting materials, key items and ammunition.
 
 Every equipped copy is protected, even above the normal keep count. Higher weapon upgrades are preferred next. Affinities count as the same weapon family. Different talisman tiers and altered armor IDs count separately. Items traders refuse to buy stay in your inventory. Storage is not processed.
 
 [b]Requirements[/b]
-Windows x64, Elden Ring executable 2.7.1.0 (in-game 1.17.1), Mod Engine 2 and the Microsoft Visual C++ 2015–2022 x64 runtime. Tested locally with Randomizer 0.12.2 and Seamless Co-op 2.0.1 loaded, with no other players connected. These optional mods are not included.
+Windows x64, Elden Ring executable 2.7.1.0 (in-game 1.17.1), Mod Engine 2 and the Microsoft Visual C++ 2015â€“2022 x64 runtime. Tested locally with Randomizer 0.12.2 and Seamless Co-op 2.0.1 loaded, with no other players connected. These optional mods are not included.
 
-[b]Install[/b]
-1. Close the game and back up your save.
-2. Put the ERDuplicateSeller folder beside your Mod Engine 2 launcher.
-3. Set sell_value_path in duplicate_seller.ini to the full path of the included sell_values.txt. Configure.ps1 can fill this in for you.
-4. Add ERDuplicateSeller\\ERDuplicateSeller.dll to the existing external_dlls list in config_eldenring.toml. Keep your other DLL entries.
-5. Launch offline through your modded launcher, load your character and press F8 while standing still.
+[b]Install in three steps[/b]
+Close the game and back up your save.
+1. Extract the ZIP and double-click Install.cmd inside ERDuplicateSeller.
+2. Select your Mod Engine 2 config_eldenring.toml. Choose actual selling or preview mode.
+3. Launch through your usual offline modded launcher, load a character and press F8 while standing still.
 
-The download starts in preview mode. Inspect the native_sale report beside the DLL, then set dry_run=false to enable selling. The included INSTALL.md has the complete setup, update and uninstall instructions.
+The installer registers the DLL and finds its price file automatically. No manual path or configuration editing is needed. Other mods are preserved and changed files are backed up. Settings.cmd switches between preview and selling. Run Install.cmd from a new download to update; existing settings and prices are preserved. Uninstall.cmd removes registration and moves the files into a backup.
 
 [b]Prices and randomizers[/b]
 The bundled numeric table comes from the installed base-game regulation. Its equipment/Ash prices match the locally tested randomizer profile. If your overhaul or randomizer changes prices or IDs, extract a new table from the regulation you actually load using the source repository helper. This mod does not replace regulation.bin.

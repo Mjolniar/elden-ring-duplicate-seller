@@ -209,7 +209,13 @@ SellValueLoadResult loadSellValueMetadata(const std::filesystem::path& path) {
     return parseSellValueMetadata(buffer.str(), path.filename().string());
 }
 
-SellValueLoadResult loadConfiguredSellValues(const Config& config) {
+SellValueLoadResult loadConfiguredSellValues(const Config& config,
+    const std::filesystem::path& dllDirectory) {
+    if (config.nativeSaleEnabled && !dllDirectory.empty()) {
+        const auto path = config.sellValuePath.empty()
+            ? std::filesystem::path("sell_values.txt") : std::filesystem::path(config.sellValuePath);
+        return loadSellValueMetadata(path.is_absolute() ? path : dllDirectory / path);
+    }
     if (config.sellValuePath.empty()) {
         return {};
     }

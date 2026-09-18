@@ -1,7 +1,7 @@
 param(
     [string]$DllPath = '',
     [string]$OutputDirectory = '',
-    [string]$Version = '0.1.0-beta.1'
+    [string]$Version = '0.1.0-beta.2'
 )
 $ErrorActionPreference = 'Stop'
 $repoRoot = Split-Path -Parent $PSScriptRoot
@@ -18,7 +18,7 @@ $payload = Join-Path $stage 'ERDuplicateSeller'
 New-Item -ItemType Directory -Path (Join-Path $payload 'docs') -Force | Out-Null
 Copy-Item -LiteralPath $DllPath -Destination (Join-Path $payload 'ERDuplicateSeller.dll')
 Copy-Item -LiteralPath (Join-Path $repoRoot 'config\provisional_2710.ini') -Destination (Join-Path $payload 'duplicate_seller.ini')
-foreach ($name in @('sell_values.txt','Configure.ps1')) {
+foreach ($name in @('sell_values.txt','Configure.ps1','Settings.cmd','Install.cmd','Uninstall.cmd','Installer.ps1')) {
     Copy-Item -LiteralPath (Join-Path $repoRoot ('release\' + $name)) -Destination $payload
 }
 foreach ($name in @('README.md','INSTALL.md','CHANGELOG.md','CREDITS.md')) {
