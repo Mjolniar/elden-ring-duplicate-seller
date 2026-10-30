@@ -1,35 +1,37 @@
-[b]Elden Ring Duplicate Seller — offline beta[/b]
+[b]Elden Ring Duplicate Seller - offline beta[/b]
 
-Press F8 to sell surplus carried equipment for the same rune value shown by traders, using the supplied price table or one extracted from your active regulation.
+[b]AI-generated.[/b] Code and docs written by AI coding agents. No independent review. Offline only. Back up your save.
 
-[b]What it keeps[/b]
-• Two copies of each weapon/shield family.
-• Two of each Ash of War.
-• One of each armor piece and talisman ID.
-• All consumables, spells, crafting materials, key items and ammunition.
+Press F8 to sell surplus carried equipment at trader rune value, using the bundled price table or one extracted from your active regulation.
 
-Every equipped copy is protected, even above the normal keep count. Higher weapon upgrades are preferred next. Affinities count as the same weapon family. Different talisman tiers and altered armor IDs count separately. Items traders refuse to buy stay in your inventory. Storage is not processed.
+[b]Kept[/b]
+• 2 per weapon/shield family.
+• 2 per Ash of War.
+• 1 per armor piece and talisman ID.
+• All consumables, spells, crafting materials, key items, ammunition.
+
+Equipped copies are always kept, even above the limit. Higher weapon upgrades are kept next. Affinities share one family. Talisman tiers and altered armor IDs count separately. Items traders refuse stay. Storage is not touched.
 
 [b]Requirements[/b]
-Windows x64, Elden Ring executable 2.7.1.0 (in-game 1.17.1), Mod Engine 2 and the Microsoft Visual C++ 2015–2022 x64 runtime. Tested locally with Randomizer 0.12.2 and Seamless Co-op 2.0.1 loaded, with no other players connected. These optional mods are not included.
+Windows x64, Elden Ring executable 2.7.1.0 (in-game 1.17.1), Mod Engine 2, Microsoft Visual C++ 2015-2022 x64 runtime. Tested with Randomizer 0.12.2 and Seamless Co-op 2.0.1 loaded, no other players connected. Those mods are not included.
 
-[b]Install in three steps[/b]
-Close the game and back up your save.
-1. Extract the ZIP and double-click Install.cmd inside ERDuplicateSeller.
-2. Select your Mod Engine 2 config_eldenring.toml. Choose actual selling or preview mode.
-3. Launch through your usual offline modded launcher, load a character and press F8 while standing still.
+[b]Install[/b]
+Close the game. Back up your save.
+1. Extract the ZIP. Run Install.cmd in ERDuplicateSeller.
+2. Select your Mod Engine 2 config_eldenring.toml. Choose selling or preview.
+3. Launch offline modded, load a character, stand still, press F8.
 
-The installer registers the DLL and finds its price file automatically. No manual path or configuration editing is needed. Other mods are preserved and changed files are backed up. Settings.cmd switches between preview and selling. Run Install.cmd from a new download to update; existing settings and prices are preserved. Uninstall.cmd removes registration and moves the files into a backup.
+The installer registers the DLL and finds the price file. No manual editing. Other mods kept; changed files backed up. Settings.cmd switches preview/selling. Update: run Install.cmd from the new download (settings and prices kept). Uninstall.cmd removes registration and moves files to a backup.
 
 [b]Prices and randomizers[/b]
-The bundled numeric table comes from the installed base-game regulation. Its equipment/Ash prices match the locally tested randomizer profile. If your overhaul or randomizer changes prices or IDs, extract a new table from the regulation you actually load using the source repository helper. This mod does not replace regulation.bin.
+Bundled table: from the base-game regulation. Equipment/Ash prices match the tested randomizer profile. If your overhaul or randomizer changes prices or IDs, extract a new table from the regulation you load with the source repository helper. regulation.bin is never replaced.
 
 [b]Beta status[/b]
-The seller completed 111 verified catalog test batches, selling 2,538 surplus equipment/Ash copies for exactly 1,221,770 runes. Item caps prevented three-copy testing of some goods. Equipped items and unaffected inventory were checked independently.
+111 verified catalog test batches: 2,538 surplus equipment/Ash copies sold for exactly 1,221,770 runes. Item caps prevented 3-copy tests of some goods. Equipment and unaffected inventory checked independently.
 
-The compact indicator is designed to appear only in menus and return to the hotkey hint 1.5 seconds after completion. Hiding during gameplay and F8 operation are verified; positive menu/Inventory visibility and the on-screen timeout still need final validation. F8 works independently of the indicator.
+The indicator should appear only in menus and revert to the hotkey hint 1.5 s after a run. Hidden in gameplay and F8 verified; menu/Inventory visibility and on-screen timeout not yet verified. F8 works regardless.
 
-Use offline only. Official online/Easy Anti-Cheat, multiplayer, storage selling and future game versions are unsupported. Native calls run on a worker thread: do not travel, collect items or change equipment while selling. Uninstalling does not restore sold items. Keep a save backup.
+Offline only. Unsupported: official online/Easy Anti-Cheat, multiplayer, storage selling, future game versions. Selling runs on a worker thread: do not travel, pick up items or change equipment during a run. Uninstalling does not restore sold items. Keep a save backup.
 
 [b]Credits[/b]
-Mjolniar, with AI-assisted development. Interface research: The Grand Archives and fromsoftware-rs. Mod Engine 2 supplies DLL loading. Soulstruct supplies optional offline price extraction. No game executables, regulation.bin, cheat tables, saves or third-party mod binaries are included.
+Mjolniar; code and docs AI-generated. Interface research: The Grand Archives, fromsoftware-rs. DLL loading: Mod Engine 2. Optional price extraction: Soulstruct. No game executables, regulation.bin, cheat tables, saves or third-party mod binaries included.
