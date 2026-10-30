@@ -1,8 +1,8 @@
-# Installation â€” 0.1.0-beta.2
+# Installation — 0.1.0-beta.2
 
 ## Before starting
 
-Close Elden Ring and back up the save used by your launcher. Use the tested offline setup and executable file version 2.7.1.0 / in-game version 1.17.1. Mod Engine 2 and the Microsoft Visual C++ 2015â€“2022 x64 runtime must already be installed. This is a manual DLL installation, not a Vortex deployment.
+Close Elden Ring and back up the save used by your launcher. Use the tested offline setup and executable file version 2.7.1.0 / in-game version 1.17.1. Mod Engine 2 and the Microsoft Visual C++ 2015–2022 x64 runtime must already be installed. This is a manual DLL installation, not a Vortex deployment.
 
 ## Install in three steps
 

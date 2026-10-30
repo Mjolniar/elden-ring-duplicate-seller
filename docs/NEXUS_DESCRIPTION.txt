@@ -1,17 +1,17 @@
-[b]Elden Ring Duplicate Seller â€” offline beta[/b]
+[b]Elden Ring Duplicate Seller — offline beta[/b]
 
 Press F8 to sell surplus carried equipment for the same rune value shown by traders, using the supplied price table or one extracted from your active regulation.
 
 [b]What it keeps[/b]
-â€¢ Two copies of each weapon/shield family.
-â€¢ Two of each Ash of War.
-â€¢ One of each armor piece and talisman ID.
-â€¢ All consumables, spells, crafting materials, key items and ammunition.
+• Two copies of each weapon/shield family.
+• Two of each Ash of War.
+• One of each armor piece and talisman ID.
+• All consumables, spells, crafting materials, key items and ammunition.
 
 Every equipped copy is protected, even above the normal keep count. Higher weapon upgrades are preferred next. Affinities count as the same weapon family. Different talisman tiers and altered armor IDs count separately. Items traders refuse to buy stay in your inventory. Storage is not processed.
 
 [b]Requirements[/b]
-Windows x64, Elden Ring executable 2.7.1.0 (in-game 1.17.1), Mod Engine 2 and the Microsoft Visual C++ 2015â€“2022 x64 runtime. Tested locally with Randomizer 0.12.2 and Seamless Co-op 2.0.1 loaded, with no other players connected. These optional mods are not included.
+Windows x64, Elden Ring executable 2.7.1.0 (in-game 1.17.1), Mod Engine 2 and the Microsoft Visual C++ 2015–2022 x64 runtime. Tested locally with Randomizer 0.12.2 and Seamless Co-op 2.0.1 loaded, with no other players connected. These optional mods are not included.
 
 [b]Install in three steps[/b]
 Close the game and back up your save.

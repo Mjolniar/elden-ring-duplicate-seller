@@ -10,7 +10,7 @@
 - Short description: Press F8 to sell duplicate equipment for trader runes. Keeps 2 weapons and Ashes of War, 1 armor and talisman, and all consumables. Offline beta for game 1.17.1.
 - File title: Elden Ring Duplicate Seller 0.1.0-beta.2
 - File description: Double-click installer for existing Mod Engine 2 setups. Choose preview or actual selling. Windows x64, executable 2.7.1.0 / in-game 1.17.1 only. Includes DLL, clean configuration, prices and setup guide.
-- Requirements: Mod Engine 2; Microsoft Visual C++ 2015â€“2022 x64 runtime. Randomizer and Seamless Co-op are optional, not bundled requirements.
+- Requirements: Mod Engine 2; Microsoft Visual C++ 2015–2022 x64 runtime. Randomizer and Seamless Co-op are optional, not bundled requirements.
 - Installation: Extract and run Install.cmd. Do not mark Vortex installation as supported.
 
 Paste `NEXUS_DESCRIPTION.txt` into the long-description field. Use the release ZIP produced by `scripts/package_nexus.ps1`; do not upload a local backup or source build folder.

@@ -8,7 +8,7 @@
 - The installer uses Windows PowerShell and built-in .NET APIs. End users do not need Python for ordinary installation; custom regulation extraction remains an advanced workflow.
 - Positive menu/Inventory hint appearance and on-screen timeout remain pending from beta.1. The current game installation remains on that earlier build.
 
-# Distribution preparation â€” 2026-09-18
+# Distribution preparation — 2026-09-18
 
 - Clean source export built successfully with Visual Studio 2022 / MSVC 19.44 and Windows SDK 10.0.26100.0.
 - All **37 tests passed** in the clean export (10.36 seconds).
